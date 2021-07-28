@@ -1,0 +1,622 @@
+@font-face {
+  font-family: Muli;
+  src: url("../css/fonts/Muli.ttf");
+}
+
+@font-face {
+  font-family: Itim;
+  src: url("../css/fonts/Itim/Itim-Regular.ttf");
+}
+
+.font-Itim {
+  font-family: Itim;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4 !important;
+  font-family: Muli !important;
+  width: 100vw !important;
+  margin: 0 !important;
+  margin-bottom: 100px !important;
+}
+body section.row:first-child {
+  margin: 0;
+}
+
+/* Side menu */
+
+.sideMenu {
+  height: 100%;
+  position: fixed;
+  background: #313848;
+  width: 300px !important;
+  padding: 30px !important;
+  color: #f4f4f4;
+}
+
+@media (max-width: 700px) {
+  .sideMenu {
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    z-index: 1;
+    padding: 20px 10px 10px 20px !important;
+  }
+  .mainMenu {
+    margin-left: 0 !important;
+    padding: 20px;
+  }
+  .sideMenu .menuUl a li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-left: 0 !important;
+  }
+  .sideMenu .avatarSide {
+    display: none;
+  }
+  .sideMenu .menuUl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .theLessonCollpase {
+    position: absolute;
+    background: #313848;
+    top: -150px;
+    z-index: 1000;
+    padding: 10px;
+  }
+}
+
+.sideMenu .userName {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.sideMenu .regNo {
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+.sideMenu .btn-danger {
+  background-color: rgb(123, 127, 218) !important;
+  border: 1px solid rgb(123, 127, 218) !important;
+  font-size: 10px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+
+.mainMenu {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.sideMenu .menuUl {
+  list-style-type: none;
+}
+
+.sideMenu .menuUl a {
+  padding: 1px;
+  color: #858585;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.sideMenu .menuUl a:hover {
+  color: #fff;
+}
+
+.sideMenu .menuUl a .iconify {
+  font-size: 25px;
+}
+
+.sideMenu .menuUl a li {
+  padding: 10px 20px;
+  margin-left: -30px;
+}
+
+.sideMenu .menuUl a.active li {
+  background: #ea7052;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.theLessonCollpase {
+  margin-left: 20px;
+  margin-top: -50px;
+}
+
+.pageTitle {
+  font-family: Itim;
+}
+
+.homeContent {
+  margin-top: 2em;
+}
+
+.homeContent .key-words .iconify {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.homeContent .key-words {
+  margin-left: 30rem !important;
+}
+
+.searchCont .iconify {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.searchCont {
+  display: flex;
+}
+
+.searchCont .input-group {
+  height: 50px;
+  display: none;
+  font-size: 18px;
+}
+
+.searchCont .input-group-text.search {
+  background-color: white;
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+.searchCont .input-group-text.cancel {
+  background-color: white;
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.searchCont .fa-search {
+  color: #d1d1d1;
+  font-size: 18px;
+}
+
+.searchCont .fa-times {
+  color: #d1d1d1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.searchCont .form-control {
+  border-left: none;
+  border-right: none;
+}
+
+.searchCont .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  box-shadow: none;
+}
+
+.lessonCards .cardo {
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  padding: 10px;
+}
+
+.lessonCards .cardo.literacy {
+  background-color: rgb(123, 127, 218);
+}
+
+.lessonCards .cardo.numeracy {
+  background-color: rgb(104, 188, 152)
+}
+
+.lessonCards .cardo.science {
+  background-color: rgb(234, 112, 82);
+}
+
+.lessonCards .cardo:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease-out;
+}
+
+.lessonCards .cardo .subjectName {
+  font-family: Muli;
+  text-transform: uppercase;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lessonCards .cardo .iconify {
+  font-size: 50px;
+}
+
+.lessonCards .recent {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lessonCards .recent h5 {
+  font-weight: bolder;
+}
+
+.lessonCards .recent .card {
+  border: none;
+  background-color: whitesmoke;
+}
+
+.lessonCards .recent .card-title {
+  font-size: 12px;
+  color: rgb(123, 127, 218);
+}
+
+.lessonCards .recent .card-text {
+  font-weight: bold;
+}
+
+.lessonCards .recent .numeracy-card .card-title {
+  font-size: 12px;
+  color: rgb(104, 188, 152);
+}
+
+.lessonCards .recent .science-card .card-title {
+  font-size: 12px;
+  color: rgb(234, 112, 82)
+}
+
+/* Video COntainaer  */
+
+.videoCont {
+  position: relative;
+  max-height: 830px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.videoCont video {
+  width: 700px;
+  max-height: 475px;
+  max-width: 100%;
+  outline: none;
+  border-radius: 15px;
+  margin-bottom: -5px;
+  transition: all .7s ease;
+}
+
+.videoCont:hover #player-controls {
+  display: block;
+}
+
+.videoCont #player-controls {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  display: none;
+}
+
+.videoCont #player-controls .pausepl {
+  cursor: pointer;
+}
+
+.theSeekbarCont {
+  margin-top: 90px;
+}
+
+.vidTime {
+  color: #fff;
+  ;
+  margin-top: 10px !important;
+}
+
+.counter-video {
+  float: right;
+  margin-bottom: 1rem;
+  margin-right: 10rem !important;
+  font-size: 18px;
+  color: #a9abb1;
+}
+
+/* QUIZ  */
+
+.instruction {
+  font-family: Itim;
+  font-size: 1.5em;
+}
+
+.the_question {
+  color: #ea7052;
+  font-size: 1.2em;
+}
+
+.optionActive {
+  background-color: rgb(123, 127, 218) !important;
+  color: #fff;
+}
+
+.option {
+  background-color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.option:hover {
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  transform: scale(1.02);
+}
+
+.LitCards {
+  padding: 20px;
+  border-radius: 10px !important;
+  transition: all 1s ease;
+  cursor: pointer;
+  background: #fff !important;
+}
+
+.LitCards .theLesson {
+  font-family: Itim;
+  font-size: 18px;
+}
+
+.playbtn {
+  transition: all 0.2s ease;
+}
+
+.LitCards:hover .playbtn {
+  transform: scale(1.1);
+}
+
+.option.draopt {
+  background: #ea7052;
+  border-radius: 10px;
+  text-align: center;
+  color: #dde6f0;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 2px;
+}
+
+.all-content .btn-primary {
+  font-size: 12px;
+  background-color: rgb(234, 112, 82);
+  border: rgb(234, 112, 82);
+}
+
+.all-content .btn-dark {
+  font-size: 12px;
+  background-color: rgb(234, 112, 82);
+  border: rgb(234, 112, 82);
+}
+
+/* LEVELS TAB  */
+
+.levelsTab {
+  border: none !important;
+}
+
+.levelsTab li {
+  margin: 0 3px 0 3px;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.levelsTab li a {
+  color: #858585 !important;
+}
+
+.levelsTab li a.active {
+  color: #fff !important;
+  background: #ea7052 !important;
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.levels .tab-content {
+  background: #f4f4f4;
+  padding: 20px;
+  -webkit-box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 0 1.5px 4px rgba(0, 0, 0, .15);
+  box-shadow: 0 1.5px 4px rgb(0 0 0 / 15%);
+  border-radius: 0 10px 10px 10px;
+  position: relative;
+  /* z-index: 9; */
+}
+
+/* Lesson Info  */
+
+.lesInfo p {
+  margin: 0;
+}
+
+.lesInfo .lesNum {
+  font-family: itim;
+  font-size: 18px;
+}
+
+.lesInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lesInfo a.btn {
+  height: 33px;
+  font-size: 14px;
+}
+
+.levelSections .LitCards {
+  margin: 10px;
+}
+
+.levelSections .LitCards img {
+  width: 70px;
+  height: 70px;
+}
+
+.levelSections .LitCards .progress {
+  height: 5px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.levelSections .LitCards .progress-bar {
+  background: #ea7052;
+  border-radius: 10px;
+}
+
+.theRow {
+  flex-wrap: nowrap !important;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.the-stats .iconify {
+  color: #ea7052;
+  font-size: 28px;
+}
+
+/* Circular Progress */
+
+.circular {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  transform: scale(2);
+  margin-left: 100px;
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: #dde6f0;
+  border-radius: 100%;
+}
+
+.circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ea7052;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: #ea7052;
+}
+
+.circle .left .progress {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .right {
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+.circle .right .progress {
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.score {
+  margin-top: -72px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 30px;
+}
+
+/* modal */
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-body {
+  padding: 15px 15px 20px;
+}
+
+/*Right*/
+
+.modal.right.fade .modal-dialog {
+  right: -10px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}

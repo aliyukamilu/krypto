@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Learning Friend</title>
+
+  <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+
+</head>
+
+<body>
+  <section class="row">
+    <aside class="col-md-3 sideMenu">
+      <div class="row mt-5 avatarSide">
+        <div class="avatarContainer col-sm-4">
+          <img src="img/icons/gamer.png" alt="">
+        </div>
+        <div class="col-sm-8">
+          <p class="userName">Aliyu Kamilu</p>
+          <p class="regNo">GCC/TRN/002</p>
+          <a href="../index.html">
+            <p class="btn btn-danger"> Logout <i class="fas fa-power-off"></i>  </p>
+          </a>
+        </div>
+      </div>
+
+      <ul class="menuUl">
+        <a href="index.html" class="">
+          <li><span class="iconify" data-icon="fluent:home-48-regular" data-inline="false"></span> Home</li>
+        </a>
+        <a href="#learningCollapse" data-bs-toggle="collapse">
+          <li class="learningMenu"><span class="iconify" data-icon="fluent:learning-app-24-regular"
+              data-inline="false"></span> Learning</li>
+        </a>
+        <div class="collapse theLessonCollpase" id="learningCollapse">
+          <a href="literacy.html">
+            <li><span class="iconify" data-icon="mdi:book-alphabet" data-inline="false"></span> Literacy</li>
+          </a>
+          <a href="literacy.html">
+            <li><span class="iconify" data-icon="fluent:keyboard-123-24-regular" data-inline="false"></span> Numeracy
+            </li>
+          </a>
+          <a href="literacy.html">
+            <li><span class="iconify" data-icon="eos-icons:atom-electron" data-inline="false"></span> Science</li>
+          </a>
+        </div>
+        <a href="analysis.html">
+          <li><span class="iconify" data-icon="bi:graph-up" data-inline="false"></span> Learnig Analysis</li>
+        </a>
+        <a href="dictionary.html"  class="active">
+          <li><span class="iconify" data-icon="mdi:book-open-page-variant-outline" data-inline="false"></span> Dictionary</li>
+        </a>
+      </ul>
+    </aside>
+  </section>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="css/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

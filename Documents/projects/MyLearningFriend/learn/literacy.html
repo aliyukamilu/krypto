@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Learning Friend</title>
+
+  <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+
+</head>
+
+<body>
+  <section class="row">
+    <aside class="col-md-3 sideMenu">
+      <div class="row mt-5 avatarSide">
+        <div class="avatarContainer col-sm-4">
+          <img src="img/icons/gamer.png" alt="">
+        </div>
+
+        <div class="col-sm-8">
+          <p class="userName">Aliyu Kamilu</p>
+          <p class="regNo">GCC/TRN/002</p>
+          <a href="../index.html">
+            <p class="btn btn-danger"> Logout <i class="fas fa-power-off"></i>  </p>
+          </a>
+        </div>
+      </div>
+
+      <ul class="menuUl">
+        <a href="index.html">
+          <li><span class="iconify" data-icon="fluent:home-48-regular" data-inline="false"></span> Home</li>
+        </a>
+        <a href="#learningCollapse" data-bs-toggle="collapse">
+          <li class="learningMenu"><span class="iconify" data-icon="fluent:learning-app-24-regular"
+              data-inline="false"></span> Learning</li>
+        </a>
+        <div class="collapse theLessonCollpase" id="learningCollapse">
+          <a href="literacy.html" class="active">
+            <li><span class="iconify" data-icon="mdi:book-alphabet" data-inline="false"></span> Literacy</li>
+          </a>
+          <a href="literacy.html">
+            <li><span class="iconify" data-icon="fluent:keyboard-123-24-regular" data-inline="false"></span> Numeracy
+            </li>
+          </a>
+          <a href="literacy.html">
+            <li><span class="iconify" data-icon="eos-icons:atom-electron" data-inline="false"></span> Science</li>
+          </a>
+        </div>
+        <a href="analysis.html">
+          <li><span class="iconify" data-icon="bi:graph-up" data-inline="false"></span> Learning Analysis</li>
+        </a>
+        <a href="dictionary.html">
+          <li><span class="iconify" data-icon="mdi:book-open-page-variant-outline" data-inline="false"></span> Dictionary</li>
+        </a>
+      </ul>
+    </aside>
+
+    <main class="col-md-9 mainMenu">
+      <div class="homeContent" style="margin-top: 0px;">
+
+        <div class="d-flex justify-content-between">
+          <h2 class="pageTitle" onclick="history.go(-1)"><span class="iconify" data-icon="eva:arrow-back-fill"
+              data-inline="false"></span> Literacy</h2>
+              <div class="searchCont">
+                <div class="input-group search">
+                  <span class="input-group-text search" id="basic-addon1"><i class="fas fa-search"></i></span>
+                  <input type="text" class="form-control" placeholder="Find a Lesson or Quest" aria-label="Username" aria-describedby="basic-addon1">
+                  <span class="input-group-text cancel" onclick="cancel();"><i class="fas fa-times"></i></span>
+                </div>
+                <span class="iconify icon" data-icon="cil:search" data-inline="false" onclick="search();"></span>
+              </div>
+        </div>
+
+        <h5 class="font-Itim mt-4">Continue Your Lesson</h5>
+        <div class="LitCards mt-2 row m-0" style="flex-direction: row; width: 50%;">
+          <div class="col-sm-3">
+            <img src="./img/icons/block.png" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p class="m-0 theLesson">Phonics</p>
+            <p class="text-muted" style="font-size: 12px;">Click to continue from where you stopped.</p>
+          </div>
+          <div class="col-sm-2">
+            <a href="video.html">
+            <svg class="playbtn" width="63" height="64" viewBox="0 0 63 64" fill="none">
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="63" height="64">
+                <path d="M0.822266 0.128906H62.84V63.4949H0.822266V0.128906Z" fill="#C4C4C4"></path>
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M8.96147 50.5061L8.96004 50.5048C2.45514 44.5994 1.42535 33.4296 4.75044 23.0773C8.06762 12.7496 15.5342 3.83686 25.2694 2.29884C34.6547 0.843547 45.0258 7.18995 52.1868 16.3188C55.7418 20.8508 58.4338 25.9874 59.7659 31.0169C61.0994 36.0512 61.0532 40.9038 59.2455 44.9468C55.5627 53.1833 47.1528 58.324 37.5008 59.5185C27.8597 60.7117 17.1191 57.9392 8.96147 50.5061Z"
+                  fill="#ea7052" stroke="#ea7052" stroke-width="2.12537" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path
+                  d="M27.7198 37.0681C27.7103 38.7185 29.5035 39.7494 30.925 38.9109L37.9008 34.7959C39.2878 33.9777 39.2965 31.9743 37.9166 31.1441L30.9884 26.9758C29.5765 26.1263 27.7768 27.137 27.7674 28.7847L27.7198 37.0681Z"
+                  fill="white"></path>
+              </g>
+            </svg>
+          </a>
+          </div>
+        </div>
+        <section class="mt-5 levels">
+          <ul class="nav nav-tabs levelsTab" role="tablist">
+            <li class="nav-item"><a href="#pri1" class="nav-link active" data-bs-toggle="tab">Primary 1</a></li>
+            <li class="nav-item"><a href="#pri2" class="nav-link" data-bs-toggle="tab">Primary 2</a></li>
+            <li class="nav-item"><a href="#pri3" class="nav-link" data-bs-toggle="tab">Primary 3</a></li>
+            <li class="nav-item"><a href="#pri4" class="nav-link" data-bs-toggle="tab">Primary 4</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="pri1" class="tab-pane fade active show">
+
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 1 :</p>
+                    <p class="lesName">Phonics</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                    <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Consonants and Vowels</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Consonant Blends</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 2 :</p>
+                    <p class="lesName">Grammar</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Nouns</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Singular and Plural Nouns</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Articles "A" and "An"</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 3 :</p>
+                    <p class="lesName">Reading</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Tahar And The Kitten</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="pri2" class="tab-pane fade">
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 1 :</p>
+                    <p class="lesName">Phonics</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Consonants Sounds</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Rhyming Words</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 2 :</p>
+                    <p class="lesName">Grammar</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Pronouns</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Verbs</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Present Tense</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Past Tense</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 3 :</p>
+                    <p class="lesName">Reading</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">The bear And The Two Friends</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 4 :</p>
+                    <p class="lesName">Writing</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Simple Sentence</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+            </div>
+            <div id="pri3" class="tab-pane fade">
+              <div class="lessonDiv">
+                <div class="lesInfo d-flex justify-content-between">
+                  <div>
+                    <p class="lesNum"> Lesson 1 :</p>
+                    <p class="lesName">Phonics</p>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="quiz.html" class="btn btn-primary"> Assessment</a>
+                  </div>
+                  <div></div>
+                </div>
+
+                <section class="levelSections">
+                  <div class="row mt-3 theRow">
+
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Consonants Sounds</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                     <a href="video.html" style="text-decoration: none;color: black" class="LitCards col-sm-3 text-center">
+                      <div class="d-flex justify-content-center" style="height: 80px;">
+                        <img src="img/icons/block.png" alt="">
+                      </div>
+                      <p class="font-Itim mt-3">Rhyming Words</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <hr>
+            </div>
+            <div id="pri4" class="tab-pane fade">
+              <p>pri 4</p>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </main>
+  </section>
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="css/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

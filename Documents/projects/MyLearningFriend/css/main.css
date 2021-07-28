@@ -1,0 +1,11 @@
+.LoginContainer h3{
+  margin-top: -27px;
+}
+.LoginContainer  .btn{
+  width: 70% !important;
+  border-radius: 30px;
+  margin-left: 3.5rem
+}
+.LoginContainer p{
+  font-size: 14px;
+}
