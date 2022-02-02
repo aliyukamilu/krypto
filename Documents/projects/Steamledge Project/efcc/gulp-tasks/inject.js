@@ -57,13 +57,13 @@ gulp.task('replacePath', function () {
         })
         .pipe(replace('src="assets/images/', 'src="../../assets/images/'))
         .pipe(replace('href="pages/', 'href="../../pages/'))
-        .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"'))
+        .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/EFCC.png-free/jquery/documentation/documentation.html"'))
         .pipe(replace('href="index.html"', 'href="../../index.html"'))
         .pipe(gulp.dest('.'));
     var replacePath2 = gulp.src('./**/index.html', {
             base: "./"
         })
-        .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"'))
+        .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/EFCC.png-free/jquery/documentation/documentation.html"'))
         .pipe(gulp.dest('.'));
     return merge(replacePath1, replacePath2);
 });

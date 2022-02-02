@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Corona Admin</title>
+  <title>EFCC.png Admin</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
@@ -112,20 +112,20 @@
       $('#loginPageTakerContainer').addClass('hidden')
       $('#loginContainer').removeClass('hidden')
     })
-
-    $('#logoutBtn').on('click', function() {
-      $('#loginContainer').addClass('hidden')
-      $('#loginPageTakerContainer').addClass('hidden')
-      $('#loginPassContainer').removeClass('hidden')
-
+    document.querySelectorAll('#logoutBtn').forEach(logoutbtn => {
+      logoutbtn.addEventListener('click', () => {
+        $('#loginContainer').addClass('hidden')
+        $('#loginPageTakerContainer').addClass('hidden')
+        $('#loginPassContainer').removeClass('hidden')
+      })
     })
 
-    $('#inputPassword').on('keyup', function() {
+    $('#inputPassword').on('keyup', function () {
       let theValue = $(this).val()
-      if(theValue === '12345') {
+      if (theValue === '12345') {
         $('#msgCont').removeClass('text-warning').addClass('text-success')
         $('#msgCont').html('Password Correct! Loggin You In .............')
-        window.location.href="./pages/cases.html"
+        window.location.href = "./pages/cases.html"
       } else {
         $('#msgCont').addClass('text-warning')
         $('#msgCont').html('Password Not correct for this user')

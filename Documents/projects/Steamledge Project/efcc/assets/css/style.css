@@ -16610,18 +16610,18 @@ code {
       top: 0;
       right: 0;
       height: 100%; }
-  .card.corona-gradient-card {
+  .card.EFCC.png-gradient-card {
     background-image: linear-gradient(to left, #d41459, #911a6c);
     border-radius: 6px; }
-    .card.corona-gradient-card .gradient-corona-img {
+    .card.EFCC.png-gradient-card .gradient-EFCC.png-img {
       height: 85px; }
       @media (max-width: 576px) {
-        .card.corona-gradient-card .gradient-corona-img {
+        .card.EFCC.png-gradient-card .gradient-EFCC.png-img {
           height: auto;
           min-height: 50px;
           max-height: 85px; } }
     @media (max-width: 576px) {
-      .card.corona-gradient-card h4 {
+      .card.EFCC.png-gradient-card h4 {
         font-size: 0.75rem; } }
 
 .card-inverse-primary {
