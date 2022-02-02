@@ -83,7 +83,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="documentRepo.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-folder"></i>
       </span>
@@ -91,7 +91,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="systemSearch.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-account-search"></i>
       </span>
@@ -99,7 +99,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="notifications.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-bell-outline"></i>
       </span>
@@ -107,7 +107,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="systemAudit.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-cached"></i>
       </span>
@@ -115,7 +115,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="performance.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-chart-bar"></i>
       </span>
@@ -123,7 +123,7 @@ $('#sidebar').html(`
     </a>
   </li>
   <li class="nav-item menu-items">
-    <a class="nav-link" href="staffRegistration.html">
+    <a class="nav-link" href="#">
       <span class="menu-icon">
         <i class="mdi mdi-account-plus"></i>
       </span>

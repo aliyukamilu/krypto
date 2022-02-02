@@ -28,9 +28,15 @@ body, html {
   border: none;
   box-shadow: 20px 19px 34px -15px rgb(0 0 0 / 50%);
 }
+
 .card .card-title {
   color: #191c24;
 }
+
 tr:hover {
   color: #fff !important;
+}
+
+.summaryCards h3 {
+  color: #191c24;
 }
