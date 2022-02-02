@@ -1,0 +1,63 @@
+.card {
+    background: transparent;
+    border: none
+}
+
+.hidden {
+    display: none;
+}
+
+.time {
+    font-size: 120px;
+}
+
+.btnAhmad {
+    font-size: 20px !important;
+    padding: 0px 20px;
+    width: 100%;
+    border-radius: 5px;
+    background: #9F0409;
+    border: none;
+}
+
+.btnAhmad .mdi {
+    font-size: 30px;
+    margin-right: 20px
+}
+
+.transBackground {
+    background: #32032F;
+    border: none;
+}
+
+.p_input {
+    background: rgba(243, 238, 238, 0.5);
+    border: 2px solid #8692A6;
+}
+
+.p_input:focus {
+    color: #fff
+}
+
+.form-groupo {
+    background: rgba(243, 238, 238, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.form-groupo .mdi {
+    font-size: 20px;
+}
+
+.form-groupo .form-control {
+    background: transparent;
+    border: none;
+    padding: 0 !important;
+    color: #fff !important;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.form-groupo .form-control::placeholder {
+    color: #fff;
+}

@@ -1,0 +1,36 @@
+body, html {
+  background: #f4f4f4;
+}
+
+.content-wrapper {
+  background: #f4f4f4
+}
+
+.sidebar .nav .nav-item.profile .profile-desc .profile-name h5 {
+  color: #191c24
+}
+
+.sidebar .sidebar-brand-wrapper .sidebar-brand img {
+  width: calc(244px - 190px);
+  max-width: 100%;
+  height: 51px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.sidebar {
+  background: #fff;
+}
+
+
+.card {
+  background: #fff;
+  border: none;
+  box-shadow: 20px 19px 34px -15px rgb(0 0 0 / 50%);
+}
+.card .card-title {
+  color: #191c24;
+}
+tr:hover {
+  color: #fff !important;
+}

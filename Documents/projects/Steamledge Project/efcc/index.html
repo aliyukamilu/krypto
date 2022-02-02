@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Corona Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="login.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="row w-100 m-0">
+        <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
+
+          <div class="card col-lg-6 mx-auto" id="loginPageTakerContainer">
+            <div class="card-body px-5 py-5 text-center">
+              <img src="assets/images/logo.png">
+              <p class="time">18:40</p>
+              <div class="d-flex justify-content-center">
+                <button id="loginPageTaker" type="button pointer"
+                  class="d-flex align-items-center btn-danger btnAhmad btn-icon-text">
+                  <i class="mdi mdi-account-box-outline btn-icon-prepend"></i> Ahmad Idris </button>
+              </div>
+              <div class="d-flex justify-content-end mt-3">
+                <button type="button" class="btn btn-danger btn-sm btn-icon-text transBackground" id="logoutBtn">
+                  <i class="mdi mdi-power btn-icon-prepend"></i>Logout</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card col-lg-4 mx-auto hidden" id="loginContainer">
+            <div class="card-body px-5 py-5">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/images/profile.png" class="mr-3" width="50">
+                <h5 class="mb-0">Ahmad Idris</h5>
+              </div>
+              <form class="mt-5">
+
+                <div class="form-group">
+                  <label>Enter Password </label>
+                  <input type="password" class="form-control p_input" id="inputPassword">
+                </div>
+                <p class="" id="msgCont"></p>
+              </form>
+              <div class="d-flex justify-content-start mt-3">
+                <button type="button" class="btn btn-danger btn-sm btn-icon-text transBackground" id="logoutBtn">
+                  <i class="mdi mdi-power btn-icon-prepend"></i>Logout</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card col-lg-4 mx-auto hidden" id="loginPassContainer">
+            <div class="card-body px-5 py-5">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <img src="./assets/images/logo.png" width="100">
+                <h1 class="text-center">Login</h1>
+              </div>
+              <form class="mt-5">
+
+                <div class="form-group">
+                  <div class="form-groupo d-flex align-items-center">
+                    <i class="mdi mdi-account-box-outline"></i>
+                    <input type="text" class="form-control" placeholder="User Id">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-groupo d-flex align-items-center">
+                    <i class="mdi mdi-lock-outline"></i>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <a href="pages/cases.html" class="btn btn-danger w-100" style="padding: 15px;">Login</a>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- row ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <script>
+    $('#loginPageTaker').on('click', function () {
+      $('#loginPageTakerContainer').addClass('hidden')
+      $('#loginContainer').removeClass('hidden')
+    })
+
+    $('#logoutBtn').on('click', function() {
+      $('#loginContainer').addClass('hidden')
+      $('#loginPageTakerContainer').addClass('hidden')
+      $('#loginPassContainer').removeClass('hidden')
+
+    })
+
+    $('#inputPassword').on('keyup', function() {
+      let theValue = $(this).val()
+      if(theValue === '12345') {
+        $('#msgCont').removeClass('text-warning').addClass('text-success')
+        $('#msgCont').html('Password Correct! Loggin You In .............')
+        window.location.href="./pages/cases.html"
+      } else {
+        $('#msgCont').addClass('text-warning')
+        $('#msgCont').html('Password Not correct for this user')
+      }
+    })
+  </script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
