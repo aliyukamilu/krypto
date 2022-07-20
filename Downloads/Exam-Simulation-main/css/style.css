@@ -1,0 +1,351 @@
+@font-face {
+  font-family: Muli;
+  src: url("./fonts/Muli.ttf");
+}
+
+@font-face {
+  font-family: Muli-light;
+  src: url("./fonts/Mulish-Light.ttf");
+}
+
+@font-face {
+  font-family: Muli-bold;
+  src: url("./fonts/Mulish-Bold.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Itim;
+  src: url("./fonts/Itim/Itim-Regular.ttf");
+}
+
+body {
+  background-color: #fff;
+  font-family: Lato !important;
+}
+
+.loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+.loading-image {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  z-index: 100;
+}
+
+ .opt {
+  cursor: pointer;
+  padding: 0px 15px;
+  border: 1px solid #565496;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.opt .opt-let {
+  margin-right: 30px;
+  margin-left: -15px;
+  background: #9594d6;
+  color: #fff;
+  padding: 17px;
+  border-radius: 10px 0px 0px 10px;
+  transition:  250ms ease-in-out;
+  /*margin-top: 5px;*/
+}
+.opt.active {
+  border: 1px solid #2bb4fa;
+}
+.opt:hover {
+  border: 1px solid #2bb4fa;
+  transform: translateY(-10px);
+  
+}
+.imag:hover{
+  transform:scale(2);
+  
+
+}
+.imag{
+  transition:  250ms ease-in-out;
+}
+.opt:hover .opt-let {
+  margin-right: 30px;
+  margin-left: -15px;
+  background: #2bb4fa;
+  padding: 17px;
+  color: #fff;
+  
+  /*margin-top: 5px;*/
+}
+.bs-example{
+  margin: 20px;
+}
+.accordion .fa{
+  margin-right: 0.5rem;
+}
+.header {
+  position: fixed;
+  font-family: Muli-light;
+  z-index: 99;
+  padding: 10px;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  width: 100%;
+  opacity: 1;
+ transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contents{
+  position: relative;
+  top: 70px;
+  font-family: Muli-light;
+}
+
+.keys .btn {
+  font-size: 12px;
+  font-weight: b;
+}
+
+.keys .btn-danger {
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.keys .btn-primary {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  height: 30px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #00b4fa;
+  border: none;
+  border-radius: 45px;
+
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.timer {
+  font-family: muli;
+  font-size: 20px;
+}
+.Thequestion{
+  font-family: Muli-light;
+  font-weight: 700;
+  font-size: large;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-pills .nav-link{
+  width: 100px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px; */
+  margin-right: 10px;
+  padding: 4px;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+    position: relative;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+.nav-link.active{
+  color: #2bb4fa;
+  background-color: #2bb4fa;
+}
+
+.right {
+  position: fixed;
+  right: 10px;
+  top: 93px;
+  /* border: 1px solid rgb(197, 194, 194); */
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  height: 85vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
+  width: auto;
+}
+
+.right .card {
+  border-radius: 10px;
+}
+
+
+
+.canval {
+  position: absolute;
+  background-color: white;
+  top: 320px;
+  width: 65%;
+  height: 70%;
+  left: 110px;
+  z-index: -1000;
+  border-radius: 10px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  padding: 40px;
+ overflow: auto;
+}
+
+
+
+.questions {
+ display: flex;
+ align-items: center;
+}
+
+
+.timerIcon {
+  height: 100%;
+  margin-right: 5px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0.25em 0.25em 0.25em 0.36em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 25rem;
+}
+
+.timerIcon .iconify {
+  font-size: 2.3em;
+  color: #00b4fa;
+}
+
+.theCount p:first-child {
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--fade-gray);
+}
+
+.theCount p:nth-child(2) {
+  font-size: 12px;
+  color: var(--fade-gray);
+  text-align: right;
+  margin-top: -8%;
+}
+
+/* accordion style */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+.accordion {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.accordion-item {
+  position: relative;
+}
+.accordion-item.active .heading {
+  color: #9594d6;
+}
+.accordion-item{
+  border-bottom: 1px solid #e5e4ff;
+}
+.accordion-item.active .icon {
+  background: #fefefe;
+}
+.accordion-item.active .icon:before {
+  background: #2bb4fa;
+}
+.accordion-item.active .icon:after {
+  width: 0;
+}
+.accordion-item .heading {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #565496;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+@media (min-width: 40rem) {
+  .accordion-item .heading {
+    font-size: 1.2rem;
+  }
+}
+.accordion-item .heading:hover {
+  color: #9594d6;
+}
+.accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
+  background: #2bb4fa;
+}
+.accordion-item .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #fefefe;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+.accordion-item .icon:before, .accordion-item .icon:after {
+  content: "";
+  width: 1.25rem;
+  height: 0.25rem;
+  background: #2bb4fa;
+  position: absolute;
+  border-radius: 3px;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.accordion-item .icon:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: -1;
+}
+.accordion-item .content {
+  display: none;
+}
+.accordion-item .content p {
+  margin-top: 0;
+}
+@media (min-width: 40rem) {
+  .accordion-item .content {
+    line-height: 1.75;
+  }
+}

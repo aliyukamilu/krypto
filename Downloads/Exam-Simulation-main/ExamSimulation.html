@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueberry</title>
+    <link rel="stylesheet" href="css/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+    integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+  <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+  <script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body);
+  </script>
+   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"
+   integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"
+   crossorigin="anonymous"></script>
+</head>
+  
+<body>
+  <div class="loading" id="load">
+    <img src="img/load/loader.gif" alt="" class="loading-image" id="load">
+  </div>
+  <section class="header">
+
+  <div class="row">
+    <div class="col-lg-2 col-1"></div>
+    <div class="col-lg-7 col-9">
+      <div class="questions"> 
+        <div class="question d-flex">
+
+          <button class="btn prev" style="margin-right: 10px;" ><i class="fas fa-chevron-left fa-1x"></i> </button>
+          <div class="allquestion mt-3">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            </ul>
+          </div>
+          
+          <button class="btn next"> <i class="fas fa-chevron-right fa-1x"></i> </button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-2">
+      <div class="d-flex justify-content-between keys mt-2">
+        <button class="btn btn-primary" style="margin-right: 20px;"  data-bs-toggle="modal" data-bs-target="#instruction"> Instruction </button>
+    
+        <button class="btn btn-primary" style="margin-right: 20px;" id="submit"> Submit </button>
+    
+        <span class="iconify text-danger" data-icon="clarity:power-solid" id="quit" style=" font-size: 30px;"></span>
+      </div>
+    </div> -->
+    <div class=" col-lg-3 col-2">
+      <div class="timer">
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="timerIcon">
+            <span class="iconify" data-icon="ant-design:field-time-outlined"></span>
+          </span>
+          <span class="theCount">
+          <h4 class="d-flex justify-content-start" ><span class="timoe" id="hours"></span><span>:</span> <span class="timoe" id="minutes"></span> <span>:</span> <span class=" timoe" id="seconds"></span></h4> 
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container contents">
+  <div class="row">
+    <div class="col-12">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="accordion" id="theAcord">
+            <!-- <div class="accordion-item">
+                <a href="#" class="heading">
+                    <div class="icon"></div>
+                    <div class="title">Pop-up typewriter tousled lo-fi?</div>
+                </a>
+        
+                <div class="content">
+                  <div class="container">
+                   <div class="row mb-3">
+                     <div class="col-lg-8 col-9">
+                       <div class="Thequestion">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia maxime illum eum veniam, incidunt nam placeat atque sint esse quasi itaque harum doloremque blanditiis iure natus! Tempora, labore quidem!
+                     </div>
+                    </div>
+                     <div class="col-lg-4 col-3">
+                       <div class="question-imag" >
+                         <img src="img/courseimg/2d.gif" width="100%" alt="" style="border-radius: 10px;" class="imag">
+                       </div>
+                     </div>
+                   </div>
+                   <div class="row mt-4 pb-4">
+                    <div class="col-lg-8 col-12">
+                      <p class="opt">
+                        <span class="opt-let">A</span>
+                        <span>The user experience is how a user interacts with and experiences a product, system or service.</span>
+                      </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+            <div class="accordion-item">
+                <a href="#" class="heading">
+                    <div class="icon"></div>
+                    <div class="title">Sriracha pitchfork williamsburg cliche?</div>
+                </a>
+        
+                <div class="content">
+                    <p>
+                        Kale chips knausgaard skateboard vice, normcore disrupt bitters fanny pack.  Gochujang cliche kale chips, vice ramps semiotics distillery.  Organic lumbersexual ugh yr literally actually.  Occupy master cleanse iPhone, microdosing literally pickled cronut waistcoat.  Pug VHS 90's asymmetrical meh swag humblebrag, you probably haven't heard of them everyday carry pinterest chicharrones ugh.  Keytar intelligentsia trust fund, tumblr roof party single-origin coffee ramps.  Everyday carry messenger bag pabst, pug mlkshk stumptown polaroid flexitarian helvetica celiac seitan.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <a href="#" class="heading">
+                    <div class="icon"></div>
+                    <div class="title">Truffaut lomo pug jean shorts tote bag?</div>
+                    
+                </a>
+        
+                <div class="content">
+                    <p>
+                        Vice kale chips selvage umami, chicharrones intelligentsia post-ironic cornhole slow-carb hammock retro synth PBR&amp;B.  Small batch waistcoat helvetica, gastropub disrupt man braid fap everyday carry hashtag tumblr you probably haven't heard of them schlitz knausgaard.  Cronut blog narwhal pop-up tilde.  Scenester PBR&amp;B microdosing, twee bespoke authentic swag banh mi sartorial fashion axe neutra brooklyn cornhole.  Pickled brunch chartreuse, ugh everyday carry drinking vinegar cray street art chillwave church-key cornhole tilde biodiesel keffiyeh.  Disrupt venmo crucifix, listicle locavore cardigan readymade.  Pabst shoreditch scenester mlkshk art party franzen, photo booth occupy lomo bushwick bitters williamsburg synth hella wayfarers.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <a href="#" class="heading">
+                    <div class="icon"></div>
+                    <div class="title">Banjo mustache organic quinoa?</div>
+                </a>
+        
+                <div class="content">
+                    <p>
+                        Craft beer paleo man bun tumblr, migas church-key synth locavore kickstarter post-ironic shabby chic.  Microdosing migas portland, literally VHS normcore kickstarter sustainable single-origin coffee occupy cardigan.  Viral venmo lomo, craft beer distillery kickstarter messenger bag fashion axe keffiyeh tofu celiac sustainable health goth deep v.  Bushwick sustainable raw denim kale chips.  Intelligentsia migas craft beer listicle, affogato messenger bag kitsch truffaut artisan irony scenester sartorial vice ennui hoodie.  Man bun blog cronut, truffaut celiac kogi photo booth quinoa direct trade  normcore iPhone.  Disrupt synth chartreuse, actually lumbersexual schlitz health goth ennui skateboard gochujang kinfolk trust fund farm-to-table.
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="pills-contacts" role="tabpanel" aria-labelledby="pills-contacts-tab">...</div>
+        <div class="tab-pane fade" id="pills-contactc" role="tabpanel" aria-labelledby="pills-contactc-tab">...</div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+  <script src="css/dist/js/jquery.js"></script>
+  <script src="css/dist/js/bootstrap.js"></script>
+ 
+  <script src="js/Exam.js"></script>
+
+<script>
+
+
+</script>
+<script>
+  let timer;
+
+let compareDate = new Date();
+compareDate.setDate(compareDate.getDate() + 7); //just for this demo today + 7 days
+
+timer = setInterval(function() {
+  timeBetweenDates(compareDate);
+}, 1000);
+
+function timeBetweenDates(toDate) {
+  let dateEntered = toDate;
+  let now = new Date();
+  let difference = dateEntered.getTime() - now.getTime();
+
+  if (difference <= 0) {
+
+    // Timer done
+    clearInterval(timer);
+  
+  } else {
+    
+    let seconds = Math.floor(difference / 1000);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(minutes / 60);
+    let days = Math.floor(hours / 24);
+
+    hours %= 2;
+    minutes %= 60;
+    seconds %= 60;
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#minutes").text(minutes);
+    $("#seconds").text(seconds);
+  }
+}
+
+
+</script>
+</body>
+<!-- modal for instruction -->
+<div class="modal fade" id="instruction" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit minus soluta vero libero voluptate laborum impedit ducimus, nihil magni. 
+        Cumque voluptatem deleniti unde perspiciatis beatae tenetur nulla itaque sed reiciendis?
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="pix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">picture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit minus soluta vero libero voluptate laborum impedit ducimus, nihil magni. 
+        Cumque voluptatem deleniti unde perspiciatis beatae tenetur nulla itaque sed reiciendis?
+      </div>
+    </div>
+  </div>
+</div>
+</html>
