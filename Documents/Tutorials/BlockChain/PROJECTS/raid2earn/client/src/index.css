@@ -2,16 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Chakra;
+  src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Regular.ttf');
+}
+
+@font-face {
+  font-family: ChakraBold;
+  src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf');
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E426F;
+}
+
+::-webkit-scrollbar-track {
+  background: #1B2845;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Chakra;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.gradientBtn {
+  background: #fa6002;
+  background: linear-gradient(90deg, rgba(250, 96, 2, 1) 35%, rgba(250, 2, 217, 1) 100%);
+}
+
+.button {
+  background: #fa6002;
+  background: linear-gradient(90deg, rgba(250, 96, 2, 1) 35%, rgba(250, 2, 217, 1) 100%);
+  font-size: 18px;
+  font-family: ChakraBold;
+  padding: 10px 35px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, rgba(250, 2, 217, 1) 35%, rgba(250, 96, 2, 1) 100%);
+}
+
+.fontBold {
+  font-family: ChakraBold;
+}
+
+.headings {
+  font-family: ChakraBold;
+  font-size: 30px;
+}
+
+.huntsCard {
+  background: #1E293B;
+  height: fit-content;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(250, 96, 2, 0.1) 0px 12px 30px 0px, rgba(250, 96, 2, 0.1) 0px 2px 4px 0px, rgba(250, 96, 2, 0.1) 0px 0px 0px 1px inset;
+}
+
+.huntsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 7px 36px -6px rgba(250, 96, 2, 0.52);
+  -webkit-box-shadow: 5px 7px 36px -6px rgba(250, 96, 2, 0.52);
+  -moz-box-shadow: 5px 7px 36px -6px rgba(250, 96, 2, 0.52);
+}
+
+.infoWrapper {
+  max-width: 400px;
+}
+
+.huntInfo {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+
+.activity button {
+  background: #fa6002 !important;
+  font-weight: bold;
+  width: 80px !important;
+}
+
+.headerIco:hover {
+  color: #fa6002;
+  border-left: 2px solid #fa6002;
+  padding-left: 10px;
+}
+
+.headerIco:hover button {
+  color: #fa6002;
+}
+
+.socialIcCont {
+  background: #fa6002;
+  padding: 15px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.socialIcCont svg {
+  font-size: 18px;
+}
+
+.socialIcCont:hover {
+  color: #fff;
 }

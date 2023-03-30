@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primaryCol: #E85039;
+    --secondaryCol: #1C315C
+}
+
+.button {
+    background: var(--primaryCol);
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button.button-outline {
+    background: transparent;
+    border: 2px solid var(--secondaryCol);
+    color:  var(--secondaryCol);
+    transition: 0.2s ease-in-out;
+}
+
+.button.button-outline:hover {
+    background: var(--secondaryCol);
+    color: #fff;
+}

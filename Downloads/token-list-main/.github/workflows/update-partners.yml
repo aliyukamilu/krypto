@@ -1,0 +1,36 @@
+name: update-partners
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1" # Midnight on monday
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3 # checkout the repository content to github runner
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Compare latest wormhole
+        run: |
+          yarn run update-partners
+          git config user.name 'Github Bot'
+          git config user.email 'bot@raccoons.dev'
+          git add .
+          git commit -m "Update latest partners' token list"
+          echo "DIFF_COUNT=$(echo git whatchanged -1 --format=oneline | wc -l)" >> $GITHUB_ENV
+
+      - name: Create Pull Request
+        if: always() && env.DIFF_COUNT > 0
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PAT }}
+          title: "Partner token list update"
+          reviewers: meijiao
+          branch: "new-partner-token-list-update-${{ github.sha }}"
+          base: main
+          delete-branch: true
